@@ -114,8 +114,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3570368154128953444}
-  - component: {fileID: 27271645915725121}
-  - component: {fileID: 1671413762521870225}
+  - component: {fileID: 4202241837165028082}
+  - component: {fileID: 1788518877441349679}
+  - component: {fileID: 6592220765395610228}
   m_Layer: 0
   m_Name: tennis_ball
   m_TagString: Untagged
@@ -139,7 +140,7 @@ Transform:
   - {fileID: 1467833971496959743}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &27271645915725121
+--- !u!54 &4202241837165028082
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,7 +167,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1671413762521870225
+--- !u!114 &1788518877441349679
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -318,3 +319,17 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &6592220765395610228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235545598600243934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5534aa87b8fd2b245a3028152f11f79c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: une balle de tennis
+  nameDisplay: {fileID: 0}

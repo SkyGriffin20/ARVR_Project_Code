@@ -1,20 +1,10 @@
 using UnityEngine;
-using TMPro; // For TextMeshPro
-using UnityEngine.XR.Interaction.Toolkit; // For XR interaction
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class DisplayObjectName : MonoBehaviour
 {
     public string objectName;  // The French name of the object
-    public TextMeshProUGUI nameDisplay;  // Reference to the TextMeshPro UI element
     private XRGrabInteractable grabInteractable;  // Reference to the XR grab interactable
-
-    void Start()
-    {
-        if (name != null)
-        {
-            nameDisplay.text = "";
-        }
-    }
 
     private void Awake()
     {
@@ -30,9 +20,11 @@ public class DisplayObjectName : MonoBehaviour
     private void OnGrab(SelectEnterEventArgs args)
     {
         Debug.Log("Object grabbed: " + objectName);  // Log for debugging
-        if (nameDisplay != null)
+
+        // Use the UIManager to display the object's name
+        if (UIManager.Instance != null)
         {
-            nameDisplay.text = objectName;  // Set the UI text to the object's name
+            UIManager.Instance.DisplayObjectName(objectName);
         }
     }
 
@@ -40,9 +32,11 @@ public class DisplayObjectName : MonoBehaviour
     private void OnRelease(SelectExitEventArgs args)
     {
         Debug.Log("Object released: " + objectName);  // Log for debugging
-        if (nameDisplay != null)
+
+        // Use the UIManager to clear the displayed name
+        if (UIManager.Instance != null)
         {
-            nameDisplay.text = "";  // Clear the UI text
+            UIManager.Instance.ClearObjectName();
         }
     }
 

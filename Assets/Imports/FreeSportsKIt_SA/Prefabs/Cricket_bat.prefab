@@ -334,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5534aa87b8fd2b245a3028152f11f79c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Cricket Bat
+  objectName: une batte de cricket
   nameDisplay: {fileID: 0}
 --- !u!1 &6472599963412519500
 GameObject:

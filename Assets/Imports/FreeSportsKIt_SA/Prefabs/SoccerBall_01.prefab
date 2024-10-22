@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3573563674364089879}
   - component: {fileID: 7195930040580610138}
   - component: {fileID: 4230286783793034796}
+  - component: {fileID: 1788323561474402215}
   m_Layer: 0
   m_Name: SoccerBall_01
   m_TagString: Untagged
@@ -286,3 +287,17 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &1788323561474402215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5367978124743597531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5534aa87b8fd2b245a3028152f11f79c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: un ballon de football
+  nameDisplay: {fileID: 0}
