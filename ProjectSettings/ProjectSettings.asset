@@ -160,7 +160,9 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.ARVR_Project
+    Standalone: com.DefaultCompany.ARVR-Project
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -849,7 +851,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: a0c18e3d-cfec-4245-a4c2-62338dc3987c
   framebufferDepthMemorylessMode: 0
