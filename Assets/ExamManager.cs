@@ -7,6 +7,7 @@ public class ExamManager : MonoBehaviour
 {
     public GameObject[] questionPanels;  // Array to store each question panel
     public TextMeshProUGUI resultText;   // Text to show feedback (Correct/Wrong)
+    public Slider expSlider;
     public int playerEXP = 0;            // Player's experience points
     public GameObject endExamPanel;           // Reference to the EndExam Panel
     public TextMeshProUGUI endExamMessage;
@@ -26,6 +27,10 @@ public class ExamManager : MonoBehaviour
         resultText.text = "";  // Clear result text at the beginning
     }
 
+    private void Update()
+    {
+        expSlider.value = playerEXP;
+    }
     void DisplayCurrentQuestion()
     {
         // Hide all question panels, then show the current one
