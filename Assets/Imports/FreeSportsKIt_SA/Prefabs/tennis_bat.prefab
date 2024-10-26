@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 8651496894152293879}
   - component: {fileID: 4858889813338115728}
   - component: {fileID: 4651189189089348880}
+  - component: {fileID: 3681503617117688986}
   m_Layer: 0
   m_Name: tennis_bat1
   m_TagString: Untagged
@@ -117,6 +118,28 @@ MeshRenderer:
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &4651189189089348880
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3764251832778184947}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7276034279916036341, guid: b8a62e7a032fc924b9dca17863c4aa7d, type: 3}
+--- !u!64 &3681503617117688986
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -364,5 +387,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5534aa87b8fd2b245a3028152f11f79c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: une batte de tennis
-  nameDisplay: {fileID: 0}
+  objectName: une raquette de tennis

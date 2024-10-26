@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8322170568614142322}
   - component: {fileID: 6096393145294263736}
   - component: {fileID: 3992007886301730701}
-  - component: {fileID: 5932072499004056258}
-  - component: {fileID: 4960220403109399197}
   - component: {fileID: 6613565898520929453}
+  - component: {fileID: 3809289241865531266}
+  - component: {fileID: 4005221736478366117}
   m_Layer: 0
   m_Name: basketBall_mdl
   m_TagString: Untagged
@@ -94,7 +94,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5735968766111233133}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1572a5fc4e61de48a3d72b0cbf105ba, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -108,7 +108,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.12452907
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &5932072499004056258
+--- !u!114 &6613565898520929453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5735968766111233133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5534aa87b8fd2b245a3028152f11f79c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: un ballon de basket
+--- !u!54 &3809289241865531266
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,7 +148,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4960220403109399197
+--- !u!114 &4005221736478366117
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,17 +300,3 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &6613565898520929453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5735968766111233133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5534aa87b8fd2b245a3028152f11f79c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectName: un ballon de basket
-  nameDisplay: {fileID: 0}

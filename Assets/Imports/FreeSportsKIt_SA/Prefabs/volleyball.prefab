@@ -94,7 +94,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3590565491754773681}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1572a5fc4e61de48a3d72b0cbf105ba, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -300,4 +300,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: un volley-ball
-  nameDisplay: {fileID: 0}

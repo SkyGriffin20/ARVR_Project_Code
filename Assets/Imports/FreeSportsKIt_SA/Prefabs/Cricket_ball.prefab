@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5661840521232636517}
   - component: {fileID: 7599282025147346607}
   - component: {fileID: 1843753055122863254}
-  - component: {fileID: 6578529217041298600}
-  - component: {fileID: 3735302692147755872}
   - component: {fileID: 594655259687023962}
+  - component: {fileID: 1469785801219892801}
+  - component: {fileID: 2381239593538660486}
   m_Layer: 0
   m_Name: Cricket_ball
   m_TagString: Untagged
@@ -94,7 +94,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8248042332050722682}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b1572a5fc4e61de48a3d72b0cbf105ba, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -108,7 +108,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.047429733
   m_Center: {x: -0.000000009313226, y: 0.0000000018626451, z: 0}
---- !u!54 &6578529217041298600
+--- !u!114 &594655259687023962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8248042332050722682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5534aa87b8fd2b245a3028152f11f79c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: une balle de cricket
+--- !u!54 &1469785801219892801
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,7 +148,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3735302692147755872
+--- !u!114 &2381239593538660486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,17 +300,3 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &594655259687023962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8248042332050722682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5534aa87b8fd2b245a3028152f11f79c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectName: une balle de cricket
-  nameDisplay: {fileID: 0}
