@@ -6,6 +6,7 @@ public class ExamPrompt : MonoBehaviour
     public GameObject promptPanel;  // Reference to the prompt UI panel
     public GameObject examUI;  // Reference to the exam UI panel
     public GameObject endExamPanel;
+    public ExamManager examManager;  // Reference to the ExamManager script
 
     private void Start()
     {
@@ -22,6 +23,16 @@ public class ExamPrompt : MonoBehaviour
 
         // Hide the prompt panel
         promptPanel.SetActive(false);
+
+        // Call the Restart method in ExamManager
+        if (examManager != null)
+        {
+            examManager.Restart();
+        }
+        else
+        {
+            Debug.LogWarning("ExamManager is not assigned in ExamPrompt.");
+        }
     }
 
     public void CloseEndExamPanel()

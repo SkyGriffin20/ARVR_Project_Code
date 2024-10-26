@@ -11,6 +11,7 @@ public class ExamManager : MonoBehaviour
     public int playerEXP = 0;            // Player's experience points
     public GameObject endExamPanel;           // Reference to the EndExam Panel
     public TextMeshProUGUI endExamMessage;
+    public GameObject promptPanel;
 
     private int currentQuestionIndex = 0;
 
@@ -22,11 +23,22 @@ public class ExamManager : MonoBehaviour
             panel.SetActive(false);
         }
 
+        Restart();
+    }
+
+    public void Restart()
+    {
+        // Hide all question panels initially
+        foreach (var panel in questionPanels)
+        {
+            panel.SetActive(false);
+        }
+        currentQuestionIndex = 0;
         // Start the exam with the first question
         DisplayCurrentQuestion();
         resultText.text = "";  // Clear result text at the beginning
     }
-
+    
     private void Update()
     {
         expSlider.value = playerEXP;
@@ -43,6 +55,7 @@ public class ExamManager : MonoBehaviour
         if (currentQuestionIndex < questionPanels.Length)
         {
             questionPanels[currentQuestionIndex].SetActive(true);
+            EnableAnswerButtons();
         }
         else
         {
@@ -74,6 +87,15 @@ public class ExamManager : MonoBehaviour
         foreach (var button in buttons)
         {
             button.interactable = false;  // Make the button unpressable
+        }
+    }
+
+    void EnableAnswerButtons()
+    {
+        var buttons = questionPanels[currentQuestionIndex].GetComponentsInChildren<Button>();
+        foreach (var button in buttons)
+        {
+            button.interactable = true;  // Make the button unpressable
         }
     }
 
